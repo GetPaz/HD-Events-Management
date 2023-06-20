@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include hd_event_management *.css
+recursive-include hd_event_management *.csv
+recursive-include hd_event_management *.html
+recursive-include hd_event_management *.ico
+recursive-include hd_event_management *.js
+recursive-include hd_event_management *.json
+recursive-include hd_event_management *.md
+recursive-include hd_event_management *.png
+recursive-include hd_event_management *.py
+recursive-include hd_event_management *.svg
+recursive-include hd_event_management *.txt
+recursive-exclude hd_event_management *.pyc
