@@ -102,13 +102,18 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	# "*": {
+	# 	"on_update": "method",
+	# 	"on_cancel": "method",
+	# 	"on_trash": "method"
+	# }
+    "HD Ticket": {
+		"after_insert": (
+			"hd_event_mamagement.hd_event_mamagement.test_file.test"
+		),
+	},
+}
 
 # Scheduled Tasks
 # ---------------
